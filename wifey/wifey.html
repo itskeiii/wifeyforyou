@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div>
+            <h1>love will you be my Valentine?</h1>
+             <button id="yesButton">Yes</button>
+             <button id="no">No</button>
+        </div>
+
+        <style>
+            div{
+                text-align: center;
+                vertical-align: middle;
+            }
+            #no{
+                position:absolute
+            }
+        </style>
+        <script>
+            document.getElementById("yesButton").addEventListener("click", alert);
+            function showAlert() {
+                alert("I love you love and i want you to be my last");
+            }
+
+            var no = document.getElementById("no");
+            no.addEventListener("click", change);
+            function change() {
+                var i = Math.floor(Math.random()1000) +1;
+                var i = Math.floor(Math.random()700)+1;
+            }
+        </script>
+    </body>
+</html>
