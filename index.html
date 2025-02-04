@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Invitation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcccb;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        .invitation {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .invitation:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            color: #e63946;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .yes {
+            background-color: #2a9d8f;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #21867a;
+        }
+        .no {
+            background-color: #e76f51;
+            color: white;
+        }
+        .no:hover {
+            background-color: #d65f4f;
+        }
+        .response {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #264653;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invitation">
+    <h1>Will You Be My Valentine?</h1>
+    <button class="button yes" onclick="showResponse('Yes! ❤️')">Yes</button>
+    <button class="button no" onclick="showResponse('No! 😢')">No</button>
+    <div class="response" id="response"></div>
+</div>
+
+<script>
+    function showResponse(answer) {
+        document.getElementById('response').innerText = answer;
+    }
+</script>
+
+</body>
+</html>
